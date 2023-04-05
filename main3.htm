@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .square {
+            width: 20vw;
+            height: 20vh;
+            margin: 5px;
+            background: purple;
+            font-size: 80px;
+            color: white;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+
+        section {
+            position: absolute;
+            /* top: 50px; */
+            bottom: 40px;
+            left: 160px;
+            right: 500px;
+            /* display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center; */
+        }
+
+        main {
+            width: 45vw;
+            height: 45vw;
+            background: blueviolet;
+        }
+
+        p {
+            background: rosybrown;
+        }
+
+        #absolute-element {
+            width: 30px;
+            height: 30px;
+            background-color: brown;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        #wrapper {
+            position: relative;
+            background: red;
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem facere aliquam animi consectetur beatae blanditiis ea esse. Dolores omnis illum magni, similique debitis architecto. Inventore qui modi explicabo doloremque!</p>
+        
+    </main>
+    <section>
+        <!-- <div class="square">1</div>
+        <div class="square">2</div>
+        <div class="square">3</div> -->
+    </section>
+
+    
+
+    <div id="wrapper">
+        <div id="under-wrapper">
+            <div>
+                <div id="absolute-element"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
