@@ -7,8 +7,11 @@
     <title>Document</title>
 
     <style>
+     @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
       body {
         margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
       }
 
       header {
@@ -36,12 +39,64 @@
 
       h4 {
         margin: 2px;
-        font-weight: 900;
+        font-weight: 800;
       }
 
       #heading-wrapper {
         text-align: center;
         font-size: 20px;
+      }
+
+      main {
+        height: 90vh;
+        background: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding-top: 10vh;
+        color: white;
+      }
+
+      article {
+        text-align: center;
+      }
+
+      .regular-text {
+        font-size: 25px;
+      }
+
+      #first-text {
+        font-weight: 600;
+      }
+
+      #last-text {
+        font-weight: 300;
+      }
+
+      h1 {
+        font-size: 100px;
+        margin: 20px;
+        font-family: 'Tilt Prism', cursive;
+        transition: 0.3s;
+      }
+
+      h1:hover {
+        letter-spacing: 50px;
+      }
+
+      button {
+        background: black;
+        color: white;
+        width: 170px;
+        height: 40px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.9s;
+      }
+
+      button:hover {
+        transform: scale(1.2);
+        color: aqua;
       }
 
     </style>
@@ -61,6 +116,13 @@
         <a href="#">Location</a>
       </nav>
     </header>
-    <main>main</main>
+    <main>
+        <article>
+            <p class="regular-text" id="first-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>SUCCESS</h1>
+            <p class="regular-text" id="last-text">Lorem ipsum dolor sit amet</p>
+            <button>Book now</button>
+        </article>
+    </main>
   </body>
 </html>
