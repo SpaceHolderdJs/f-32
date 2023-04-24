@@ -7,10 +7,20 @@ h1 {
   font-weight: 700;
 }
 
+p {
+  font-size: 16px;
+  color: grey;
+}
+
 section {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .flex-column {
@@ -119,13 +129,49 @@ main .hero-wrapper .flex-column {
   gap: 34px;
 }
 
-main .hero-wrapper .flex-column p {
-  font-size: 16px;
-  color: grey;
-}
-
 main .hero-wrapper .flex-column .buttons-wrapper {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+main .second-section {
+  margin-top: 15vh;
+}
+
+main .second-section-wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .second-section-wrapper .features {
+  width: 100%;
+}
+
+main .second-section-wrapper .features .flex-column {
+  text-align: center;
+  align-items: center;
+  margin: 24px 16px;
+}
+
+main .second-section-wrapper .features .flex-column img {
+  width: 40px;
+  height: 40px;
+}
+
+#tag2 {
+  background: #f7f1ff;
+  padding: 8px 16px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 30px;
+}
+
+#tag2 img {
+  margin-right: 12px;
 }
