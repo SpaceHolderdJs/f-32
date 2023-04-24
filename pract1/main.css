@@ -1,5 +1,51 @@
 body {
   margin: 0;
+  overflow-x: hidden;
+  animation: body-animatinon 3s infinite;
+}
+
+/* Animations */
+
+@keyframes top-sliding {
+  10% {
+    transform: translateX(30px) translateY(50px) translateZ(150px) rotateY(360deg);
+  }
+
+  80% {
+    transform: translateX(-30px) translateY(-50px) translateZ(-150px) rotateY(360deg);
+  }
+
+  90% { 
+    transform: translateX(30px) translateY(50px) translateZ(150px) rotateY(360deg);
+  }
+}
+
+@keyframes scaling {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes body-animatinon {
+  0% {
+    background: white;
+  }
+
+  50% {
+    background: lightskyblue;
+  }
+
+  100% {
+    background: lightgray;
+  }
+}
+
+.scaling-animation {
+  animation: scaling 3s infinite;
 }
 
 h1 {
@@ -35,6 +81,10 @@ button {
   align-items: center;
   cursor: pointer;
   box-shadow: 1px 2px 4.3px 0.5px black;
+}
+
+.animated {
+  animation: top-sliding 4s infinite;
 }
 
 .button-primary {
@@ -114,6 +164,7 @@ main .hero-section {
   background: url(./images/hero-backround.png) no-repeat;
   background-size: 120% 100%;
   background-position: -130px 30px;
+  padding-bottom: 200px;
 }
 
 main .hero-wrapper {
@@ -170,8 +221,33 @@ main .second-section-wrapper .features .flex-column img {
   justify-content: center;
   width: 150px;
   height: 30px;
+  color: #722ED1;
 }
 
 #tag2 img {
+  margin-right: 12px;
+}
+
+main .stack-section-wrapper {
+  width: 70%;
+  align-items: center;
+  margin-top: 120px;
+  justify-content: space-between;
+  gap: 88px;
+}
+
+#tag3 {
+  background: #f7f1ff;
+  padding: 8px 16px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 224px;
+  height: 30px;
+  color: #722ED1;
+}
+
+#tag3 img {
   margin-right: 12px;
 }
